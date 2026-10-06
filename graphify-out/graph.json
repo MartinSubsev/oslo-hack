@@ -1,0 +1,410 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "meet_build_share_flow",
+        "label": "Meet \u2192 Build \u2192 Share workflow",
+        "nodes": [
+          "index_meet",
+          "index_build",
+          "index_share"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "index.html"
+      }
+    ],
+    "schema_version": 1,
+    "graphify_version": "0.9.78"
+  },
+  "nodes": [
+    {
+      "id": "script_setplanstate",
+      "label": "setPlanState()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Session Plan Toggle",
+      "file_type": "code",
+      "norm_label": "setplanstate()",
+      "source_file": "script.js",
+      "source_location": "L35"
+    },
+    {
+      "id": "script_toggleplan",
+      "label": "togglePlan()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Session Plan Toggle",
+      "file_type": "code",
+      "norm_label": "toggleplan()",
+      "source_file": "script.js",
+      "source_location": "L48"
+    },
+    {
+      "id": "script",
+      "label": "script.js",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Session Plan Toggle",
+      "file_type": "code",
+      "norm_label": "script.js",
+      "source_file": "script.js",
+      "source_location": "L1"
+    },
+    {
+      "id": "index_session_plan",
+      "label": "Session plan (terminal toggle)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Landing Page Layout",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "session plan (terminal toggle)",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index",
+      "label": "Oslo Hack landing page (index.html)",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Landing Page Layout",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "oslo hack landing page (index.html)",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_cta_band",
+      "label": "CTA band",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Landing Page Layout",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "cta band",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_footer",
+      "label": "Footer",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Landing Page Layout",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "footer",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_hero",
+      "label": "Hero section",
+      "author": null,
+      "captured_at": null,
+      "community": 0,
+      "community_name": "Landing Page Layout",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "hero section",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_build",
+      "label": "Build step",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Hack Steps Navigation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "build step",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_meet",
+      "label": "Meet step",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Hack Steps Navigation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "meet step",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_share",
+      "label": "Share step",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Hack Steps Navigation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "share step",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "index_nav",
+      "label": "Navigation header",
+      "author": null,
+      "captured_at": null,
+      "community": 1,
+      "community_name": "Hack Steps Navigation",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "navigation header",
+      "rationale": null,
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null
+    }
+  ],
+  "links": [
+    {
+      "source": "script_toggleplan",
+      "target": "script_setplanstate",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "script.js",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "script",
+      "target": "script_setplanstate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "script.js",
+      "source_location": "L35",
+      "weight": 1.0
+    },
+    {
+      "source": "script",
+      "target": "script_toggleplan",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "script.js",
+      "source_location": "L56",
+      "weight": 1.0
+    },
+    {
+      "source": "index_build",
+      "target": "index_session_plan",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_build",
+      "target": "index_share",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_meet",
+      "target": "index_build",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_hero",
+      "target": "index_meet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "fweight": 1,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_cta_band",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_footer",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_hero",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_nav",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index",
+      "target": "index_session_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_cta_band",
+      "target": "index_meet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_footer",
+      "target": "index_session_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_hero",
+      "target": "index_session_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_nav",
+      "target": "index_build",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_nav",
+      "target": "index_meet",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_nav",
+      "target": "index_session_plan",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_nav",
+      "target": "index_share",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "meet_build_share_flow",
+      "label": "Meet \u2192 Build \u2192 Share workflow",
+      "nodes": [
+        "index_meet",
+        "index_build",
+        "index_share"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "index.html"
+    }
+  ],
+  "built_at_commit": "70276c9ed17dc889a5c543a37167f388c8625863"
+}

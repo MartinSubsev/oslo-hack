@@ -1,0 +1,14 @@
+{
+  "script.js": {
+    "mtime": 1791328381.7669487,
+    "seen": 1791328585.071542,
+    "ast_hash": "9f4a9856e2fe0a157565d3f29a13f03e",
+    "semantic_hash": "9f4a9856e2fe0a157565d3f29a13f03e"
+  },
+  "index.html": {
+    "mtime": 1791328381.7669487,
+    "seen": 1791328585.0715494,
+    "ast_hash": "e0ba2044b27ddc458b73c9cc1593166b",
+    "semantic_hash": "e0ba2044b27ddc458b73c9cc1593166b"
+  }
+}

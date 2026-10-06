@@ -1,0 +1,9 @@
+# Graphify: brand assets (logos, favicons, OG images) carry no architecture.
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.svg
+*.ico
+public/robots.txt
